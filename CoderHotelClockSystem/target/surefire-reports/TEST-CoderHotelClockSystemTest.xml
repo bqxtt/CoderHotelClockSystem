@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CoderHotelClockSystemTest" time="0.029" tests="7" errors="0" skipped="0" failures="0">
+<testsuite xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="https://maven.apache.org/surefire/maven-surefire-plugin/xsd/surefire-test-report.xsd" name="CoderHotelClockSystemTest" time="0.027" tests="8" errors="0" skipped="0" failures="0">
   <properties>
     <property name="sun.desktop" value="windows"/>
     <property name="awt.toolkit" value="sun.awt.windows.WToolkit"/>
@@ -18,7 +18,7 @@
     <property name="sun.java.launcher" value="SUN_STANDARD"/>
     <property name="user.country" value="CN"/>
     <property name="sun.boot.library.path" value="E:\Java\jdk-9.0.4\bin"/>
-    <property name="sun.java.command" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire17854954008846348530\surefirebooter18010332500675208757.jar C:\Users\Administrator\AppData\Local\Temp\surefire17854954008846348530 2019-09-26T15-55-15_908-jvmRun1 surefire6569630911433929963tmp surefire_04703773464553131692tmp"/>
+    <property name="sun.java.command" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire15825624762576626344\surefirebooter15783666006663689662.jar C:\Users\Administrator\AppData\Local\Temp\surefire15825624762576626344 2019-09-27T18-40-07_332-jvmRun1 surefire11437505425879583717tmp surefire_01775334443628973264tmp"/>
     <property name="jdk.debug" value="release"/>
     <property name="surefire.test.class.path" value="E:\eclipse-workspace\CoderHotelClockSystem\target\test-classes;E:\eclipse-workspace\CoderHotelClockSystem\target\classes;E:\eclipse-workspace\mvn\mvnrepository\org\junit\jupiter\junit-jupiter\5.4.2\junit-jupiter-5.4.2.jar;E:\eclipse-workspace\mvn\mvnrepository\org\junit\jupiter\junit-jupiter-api\5.4.2\junit-jupiter-api-5.4.2.jar;E:\eclipse-workspace\mvn\mvnrepository\org\opentest4j\opentest4j\1.1.1\opentest4j-1.1.1.jar;E:\eclipse-workspace\mvn\mvnrepository\org\junit\platform\junit-platform-commons\1.4.2\junit-platform-commons-1.4.2.jar;E:\eclipse-workspace\mvn\mvnrepository\org\junit\jupiter\junit-jupiter-params\5.4.2\junit-jupiter-params-5.4.2.jar;E:\eclipse-workspace\mvn\mvnrepository\org\junit\jupiter\junit-jupiter-engine\5.4.2\junit-jupiter-engine-5.4.2.jar;E:\eclipse-workspace\mvn\mvnrepository\org\junit\platform\junit-platform-engine\1.4.2\junit-platform-engine-1.4.2.jar;E:\eclipse-workspace\mvn\mvnrepository\org\junit\platform\junit-platform-runner\1.4.2\junit-platform-runner-1.4.2.jar;E:\eclipse-workspace\mvn\mvnrepository\junit\junit\4.12\junit-4.12.jar;E:\eclipse-workspace\mvn\mvnrepository\org\hamcrest\hamcrest-core\1.3\hamcrest-core-1.3.jar;E:\eclipse-workspace\mvn\mvnrepository\org\apiguardian\apiguardian-api\1.0.0\apiguardian-api-1.0.0.jar;E:\eclipse-workspace\mvn\mvnrepository\org\junit\platform\junit-platform-launcher\1.4.2\junit-platform-launcher-1.4.2.jar;E:\eclipse-workspace\mvn\mvnrepository\org\junit\platform\junit-platform-suite-api\1.4.2\junit-platform-suite-api-1.4.2.jar;"/>
     <property name="sun.cpu.endian" value="little"/>
@@ -33,7 +33,7 @@
     <property name="java.vm.specification.vendor" value="Oracle Corporation"/>
     <property name="java.specification.name" value="Java Platform API Specification"/>
     <property name="java.awt.graphicsenv" value="sun.awt.Win32GraphicsEnvironment"/>
-    <property name="surefire.real.class.path" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire17854954008846348530\surefirebooter18010332500675208757.jar"/>
+    <property name="surefire.real.class.path" value="C:\Users\ADMINI~1\AppData\Local\Temp\surefire15825624762576626344\surefirebooter15783666006663689662.jar"/>
     <property name="user.script" value=""/>
     <property name="sun.management.compiler" value="HotSpot 64-Bit Tiered Compilers"/>
     <property name="java.runtime.version" value="9.0.4+11"/>
@@ -59,11 +59,12 @@
     <property name="sun.io.unicode.encoding" value="UnicodeLittle"/>
     <property name="java.class.version" value="53.0"/>
   </properties>
-  <testcase name="addCityClockTest" classname="CoderHotelClockSystemTest" time="0.012"/>
+  <testcase name="addCityClockTest" classname="CoderHotelClockSystemTest" time="0.011"/>
   <testcase name="phoneClockTest" classname="CoderHotelClockSystemTest" time="0.002"/>
   <testcase name="moscowClockTest" classname="CoderHotelClockSystemTest" time="0.001"/>
   <testcase name="sydneyClockTest" classname="CoderHotelClockSystemTest" time="0"/>
-  <testcase name="londonClockTest" classname="CoderHotelClockSystemTest" time="0.001"/>
+  <testcase name="exceptionTest" classname="CoderHotelClockSystemTest" time="0.002"/>
+  <testcase name="londonClockTest" classname="CoderHotelClockSystemTest" time="0"/>
   <testcase name="clockSystemTest" classname="CoderHotelClockSystemTest" time="0.001"/>
-  <testcase name="newYorkClockTest" classname="CoderHotelClockSystemTest" time="0.001"/>
+  <testcase name="newYorkClockTest" classname="CoderHotelClockSystemTest" time="0"/>
 </testsuite>

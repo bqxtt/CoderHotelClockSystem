@@ -15,12 +15,11 @@ class CoderHotelClockSystemTest
 	@BeforeAll
 	public static void init()
 	{
-		System.out.println("dsafs");
 	}
 
 	@Test
 	@DisplayName("正确设置手机时间")
-	void phoneClockTest()
+	void phoneClockTest() throws Exception
 	{
 		PhoneClock phoneClock = new PhoneClock(8);
 		phoneClock.setLocalTime("11:22");
@@ -28,6 +27,18 @@ class CoderHotelClockSystemTest
 		assertEquals(11, phoneClock.hour);
 		assertEquals(22, phoneClock.minute);
 		assertEquals("11:22", phoneClock.getLocalTime());
+	}
+	
+	@Test
+	@DisplayName("正确抛出异常")
+	void exceptionTest()
+	{
+		PhoneClock phoneClock = new PhoneClock(8);
+		Throwable exception = assertThrows(Exception.class, () -> 
+		{
+			phoneClock.setLocalTime("33:33");
+		});
+		assertEquals("时间输入有误", exception.getMessage());
 	}
 	
 	@Test
@@ -62,7 +73,7 @@ class CoderHotelClockSystemTest
 	
 	@Test
 	@DisplayName("正确校准伦敦时间")
-	void londonClockTest()
+	void londonClockTest() throws Exception
 	{
 		CoderHotelClockSystem coderHotelClockSystem = new CoderHotelClockSystem();
 		PhoneClock phoneClock      = new PhoneClock(8);
@@ -76,7 +87,7 @@ class CoderHotelClockSystemTest
 	
 	@Test
 	@DisplayName("正确校准莫斯科时间")
-	void moscowClockTest()
+	void moscowClockTest() throws Exception
 	{
 		CoderHotelClockSystem coderHotelClockSystem = new CoderHotelClockSystem();
 		PhoneClock phoneClock      = new PhoneClock(8);
@@ -90,7 +101,7 @@ class CoderHotelClockSystemTest
 	
 	@Test
 	@DisplayName("正确校准悉尼时间")
-	void sydneyClockTest()
+	void sydneyClockTest() throws Exception
 	{
 		CoderHotelClockSystem coderHotelClockSystem = new CoderHotelClockSystem();
 		PhoneClock phoneClock      = new PhoneClock(8);
@@ -104,7 +115,7 @@ class CoderHotelClockSystemTest
 	
 	@Test
 	@DisplayName("正确校准纽约时间")
-	void newYorkClockTest()
+	void newYorkClockTest() throws Exception
 	{
 		CoderHotelClockSystem coderHotelClockSystem = new CoderHotelClockSystem();
 		PhoneClock phoneClock      = new PhoneClock(8);

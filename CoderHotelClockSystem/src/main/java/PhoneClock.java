@@ -14,7 +14,7 @@ public class PhoneClock extends Clock
 		this.coderHotelClockSystem = coderHotelClockSystem; 
 	}
 	
-	public void setLocalTime(String localTime)
+	public void setLocalTime(String localTime) throws Exception
 	{
 		super.setLocalTime(localTime);
 		if(coderHotelClockSystem != null)

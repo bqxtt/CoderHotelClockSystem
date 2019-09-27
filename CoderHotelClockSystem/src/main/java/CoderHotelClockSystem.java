@@ -11,7 +11,7 @@ public class CoderHotelClockSystem
 	{
 		clocks.add(clock);
 	}
-	public void updateClocksWithUtcTime(String utcTime)
+	public void updateClocksWithUtcTime(String utcTime) throws Exception
 	{
 		String t[] = utcTime.split(":");
 		int hour = Integer.parseInt(t[0]);

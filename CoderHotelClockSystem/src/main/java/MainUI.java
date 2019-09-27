@@ -22,7 +22,14 @@ public class MainUI
 		coderHotelClockSystem.addClock(newYorkCityClock);
 		phoneClock.setCoderHotelClockSystem(coderHotelClockSystem);
 		
-		phoneClock.setLocalTime("00:00");
+		try
+		{
+			phoneClock.setLocalTime("00:00");
+		} catch (Exception e1)
+		{
+			// TODO Auto-generated catch block
+			e1.printStackTrace();
+		}
 		int op;
 		Scanner cinScanner = new Scanner(System.in);
 		do
@@ -35,7 +42,14 @@ public class MainUI
 			{
 				System.out.println("请输入时间(hh:ss)");
 				String localTime = cinScanner.next();
-				phoneClock.setLocalTime(localTime);
+				try
+				{
+					phoneClock.setLocalTime(localTime);
+				} catch (Exception e)
+				{
+					// TODO Auto-generated catch block
+					e.printStackTrace();
+				}
 			}
 			else if(op == 2)
 			{
